@@ -1,0 +1,1008 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x28868df3CaF026090556617A1f409a5ee234479d",
+    "txHash": "0xba791169c5d8ad12cfe5add3374d398b36aefa9b9801fdc966eca1c33f7a4e5f"
+  },
+  "proxies": [
+    {
+      "address": "0x5f6A29ce9a9e980DE8914dF977eA9028F071d040",
+      "txHash": "0x6880d6094a5dcd04b6382814cfbed2c69483edac72d672938da4c76ecc56d3d3",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x5dd51560dF2421589CD9d78219d2363074FdbbeF",
+      "txHash": "0x8b54a87fe04069402426b5bbeece411a8ba6facfedbcdfc49df7e3ed052ad9ad",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x222612E489fc66C41C16eE61Fa06AfB3DBcec030",
+      "txHash": "0xd13dddadbc7bbcfda5dd6eb6faaccb56acdab9dd20b8f0bb88944f16335eb407",
+      "kind": "transparent"
+    },
+    {
+      "address": "0xfF1E80a36828727287Bd79AB43655ea955C99db4",
+      "txHash": "0xfe35e300b5ad32db8b5a6666cf89e3ad96a73ff540e4d99d694778d289177c10",
+      "kind": "transparent"
+    },
+    {
+      "address": "0x91b46a0864C4c5664e9feaE6ba316e8FFE9F16Cc",
+      "txHash": "0xf81ffea8f1e6e80886c6f2ab9aa405c7fc2962770610572694f2c397b669d85a",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "03bbf9ab1fdb4223931d35d9a3cbf5d8f69c179b9662a8619c372e6584ddfc68": {
+      "address": "0xE1d31895abE50df7634c8226CB04e94de12aEBC8",
+      "txHash": "0x224fcfed5f04314f5159bfe7a62dc16c2f9a1c6eb9367ea5dd73c2631942125b",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts/gsxToken/Initializable.sol:10"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts/gsxToken/Initializable.sol:15"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts/gsxToken/ContextUpgradeable.sol:22"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts/gsxToken/OwnableUpgradeable.sol:8"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts/gsxToken/OwnableUpgradeable.sol:63"
+          },
+          {
+            "label": "_rOwned",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:54"
+          },
+          {
+            "label": "_tOwned",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:55"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:56"
+          },
+          {
+            "label": "_isExcludedFromFee",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:57"
+          },
+          {
+            "label": "_isExcluded",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:58"
+          },
+          {
+            "label": "_isBlacklisted",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:59"
+          },
+          {
+            "label": "_accountsTier",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:60"
+          },
+          {
+            "label": "_excluded",
+            "offset": 0,
+            "slot": "108",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:62"
+          },
+          {
+            "label": "_tTotal",
+            "offset": 0,
+            "slot": "109",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:66"
+          },
+          {
+            "label": "_rTotal",
+            "offset": 0,
+            "slot": "110",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:68"
+          },
+          {
+            "label": "_tFeeTotal",
+            "offset": 0,
+            "slot": "111",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:70"
+          },
+          {
+            "label": "_maxFee",
+            "offset": 0,
+            "slot": "112",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:71"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "113",
+            "type": "t_string_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:73"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "114",
+            "type": "t_string_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:74"
+          },
+          {
+            "label": "_decimals",
+            "offset": 0,
+            "slot": "115",
+            "type": "t_uint8",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:75"
+          },
+          {
+            "label": "_defaultFees",
+            "offset": 0,
+            "slot": "116",
+            "type": "t_struct(FeeTier)87_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:76"
+          },
+          {
+            "label": "_previousFees",
+            "offset": 0,
+            "slot": "123",
+            "type": "t_struct(FeeTier)87_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:77"
+          },
+          {
+            "label": "_emptyFees",
+            "offset": 0,
+            "slot": "130",
+            "type": "t_struct(FeeTier)87_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:79"
+          },
+          {
+            "label": "feeTiers",
+            "offset": 0,
+            "slot": "137",
+            "type": "t_array(t_struct(FeeTier)87_storage)dyn_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:81"
+          },
+          {
+            "label": "uniswapV2Router",
+            "offset": 0,
+            "slot": "138",
+            "type": "t_contract(IUniswapV2Router02)4175",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:83"
+          },
+          {
+            "label": "uniswapV2Pair",
+            "offset": 0,
+            "slot": "139",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:85"
+          },
+          {
+            "label": "WBNB",
+            "offset": 0,
+            "slot": "140",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:87"
+          },
+          {
+            "label": "migration",
+            "offset": 0,
+            "slot": "141",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:89"
+          },
+          {
+            "label": "_initializerAccount",
+            "offset": 0,
+            "slot": "142",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:91"
+          },
+          {
+            "label": "_burnAddress",
+            "offset": 0,
+            "slot": "143",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:93"
+          },
+          {
+            "label": "inSwapAndLiquify",
+            "offset": 20,
+            "slot": "143",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:95"
+          },
+          {
+            "label": "swapAndLiquifyEnabled",
+            "offset": 21,
+            "slot": "143",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:97"
+          },
+          {
+            "label": "_maxTxAmount",
+            "offset": 0,
+            "slot": "144",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:99"
+          },
+          {
+            "label": "numTokensSellToAddToLiquidity",
+            "offset": 0,
+            "slot": "145",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:101"
+          },
+          {
+            "label": "_upgraded",
+            "offset": 0,
+            "slot": "146",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:104"
+          },
+          {
+            "label": "numTokensToCollectBNB",
+            "offset": 0,
+            "slot": "147",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:150"
+          },
+          {
+            "label": "numOfBnbToSwapAndEvolve",
+            "offset": 0,
+            "slot": "148",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:151"
+          },
+          {
+            "label": "inSwapAndEvolve",
+            "offset": 0,
+            "slot": "149",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:152"
+          },
+          {
+            "label": "swapAndEvolveEnabled",
+            "offset": 1,
+            "slot": "149",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:153"
+          },
+          {
+            "label": "_rTotalExcluded",
+            "offset": 0,
+            "slot": "150",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:155"
+          },
+          {
+            "label": "_tTotalExcluded",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:156"
+          },
+          {
+            "label": "listIgnoreCollectBNBAddresses",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:158"
+          },
+          {
+            "label": "bridgeBurnAddress",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:159"
+          },
+          {
+            "label": "whitelistMint",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:160"
+          },
+          {
+            "label": "isPaused",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:161"
+          },
+          {
+            "label": "whitelistPause",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:162"
+          },
+          {
+            "label": "isGSXPair",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:163"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(FeeTier)87_storage)dyn_storage": {
+            "label": "struct GSXV2.FeeTier[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IUniswapV2Router02)4175": {
+            "label": "contract IUniswapV2Router02",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(FeeTier)87_storage": {
+            "label": "struct GSXV2.FeeTier",
+            "members": [
+              {
+                "label": "ecoSystemFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "liquidityFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "taxFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "ownerFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "burnFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ecoSystem",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "bac75e14f8eb1036e41abd14db88bf242e6f14c22922bceb44ea9536df4246be": {
+      "address": "0x7c7D2d43a2bc915860CCe1401a90919ec35e8299",
+      "txHash": "0xbc5af44ddb4e8e55d903fe7cfb036c0d01e737c4141ad6abd4dfa315e1efff40",
+      "layout": {
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts/gsxToken/Initializable.sol:18"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "contracts/gsxToken/Initializable.sol:23"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "contracts/gsxToken/ContextUpgradeable.sol:49"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts/gsxToken/OwnableUpgradeable.sol:32"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "contracts/gsxToken/OwnableUpgradeable.sol:119"
+          },
+          {
+            "label": "_rOwned",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:294"
+          },
+          {
+            "label": "_tOwned",
+            "offset": 0,
+            "slot": "102",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:295"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "103",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:296"
+          },
+          {
+            "label": "_isExcludedFromFee",
+            "offset": 0,
+            "slot": "104",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:297"
+          },
+          {
+            "label": "_isExcluded",
+            "offset": 0,
+            "slot": "105",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:298"
+          },
+          {
+            "label": "_isBlacklisted",
+            "offset": 0,
+            "slot": "106",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:299"
+          },
+          {
+            "label": "_accountsTier",
+            "offset": 0,
+            "slot": "107",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:300"
+          },
+          {
+            "label": "_excluded",
+            "offset": 0,
+            "slot": "108",
+            "type": "t_array(t_address)dyn_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:302"
+          },
+          {
+            "label": "_tTotal",
+            "offset": 0,
+            "slot": "109",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:306"
+          },
+          {
+            "label": "_rTotal",
+            "offset": 0,
+            "slot": "110",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:308"
+          },
+          {
+            "label": "_tFeeTotal",
+            "offset": 0,
+            "slot": "111",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:310"
+          },
+          {
+            "label": "_maxFee",
+            "offset": 0,
+            "slot": "112",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:311"
+          },
+          {
+            "label": "_name",
+            "offset": 0,
+            "slot": "113",
+            "type": "t_string_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:313"
+          },
+          {
+            "label": "_symbol",
+            "offset": 0,
+            "slot": "114",
+            "type": "t_string_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:314"
+          },
+          {
+            "label": "_decimals",
+            "offset": 0,
+            "slot": "115",
+            "type": "t_uint8",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:315"
+          },
+          {
+            "label": "_defaultFees",
+            "offset": 0,
+            "slot": "116",
+            "type": "t_struct(FeeTier)1203_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:316"
+          },
+          {
+            "label": "_previousFees",
+            "offset": 0,
+            "slot": "123",
+            "type": "t_struct(FeeTier)1203_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:317"
+          },
+          {
+            "label": "_emptyFees",
+            "offset": 0,
+            "slot": "130",
+            "type": "t_struct(FeeTier)1203_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:319"
+          },
+          {
+            "label": "feeTiers",
+            "offset": 0,
+            "slot": "137",
+            "type": "t_array(t_struct(FeeTier)1203_storage)dyn_storage",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:321"
+          },
+          {
+            "label": "uniswapV2Router",
+            "offset": 0,
+            "slot": "138",
+            "type": "t_contract(IUniswapV2Router02)9439",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:323"
+          },
+          {
+            "label": "uniswapV2Pair",
+            "offset": 0,
+            "slot": "139",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:325"
+          },
+          {
+            "label": "WBNB",
+            "offset": 0,
+            "slot": "140",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:327"
+          },
+          {
+            "label": "migration",
+            "offset": 0,
+            "slot": "141",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:329"
+          },
+          {
+            "label": "_initializerAccount",
+            "offset": 0,
+            "slot": "142",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:331"
+          },
+          {
+            "label": "_burnAddress",
+            "offset": 0,
+            "slot": "143",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:333"
+          },
+          {
+            "label": "inSwapAndLiquify",
+            "offset": 20,
+            "slot": "143",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:335"
+          },
+          {
+            "label": "swapAndLiquifyEnabled",
+            "offset": 21,
+            "slot": "143",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:337"
+          },
+          {
+            "label": "_maxTxAmount",
+            "offset": 0,
+            "slot": "144",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:339"
+          },
+          {
+            "label": "numTokensSellToAddToLiquidity",
+            "offset": 0,
+            "slot": "145",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:341"
+          },
+          {
+            "label": "_upgraded",
+            "offset": 0,
+            "slot": "146",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:344"
+          },
+          {
+            "label": "numTokensToCollectBNB",
+            "offset": 0,
+            "slot": "147",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:434"
+          },
+          {
+            "label": "numOfBnbToSwapAndEvolve",
+            "offset": 0,
+            "slot": "148",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:435"
+          },
+          {
+            "label": "inSwapAndEvolve",
+            "offset": 0,
+            "slot": "149",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:436"
+          },
+          {
+            "label": "swapAndEvolveEnabled",
+            "offset": 1,
+            "slot": "149",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:437"
+          },
+          {
+            "label": "_rTotalExcluded",
+            "offset": 0,
+            "slot": "150",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:439"
+          },
+          {
+            "label": "_tTotalExcluded",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_uint256",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:440"
+          },
+          {
+            "label": "listIgnoreCollectBNBAddresses",
+            "offset": 0,
+            "slot": "152",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:442"
+          },
+          {
+            "label": "bridgeBurnAddress",
+            "offset": 0,
+            "slot": "153",
+            "type": "t_address",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:443"
+          },
+          {
+            "label": "whitelistMint",
+            "offset": 0,
+            "slot": "154",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:444"
+          },
+          {
+            "label": "isPaused",
+            "offset": 0,
+            "slot": "155",
+            "type": "t_bool",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:445"
+          },
+          {
+            "label": "whitelistPause",
+            "offset": 0,
+            "slot": "156",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:446"
+          },
+          {
+            "label": "isGSXPair",
+            "offset": 0,
+            "slot": "157",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "GSXV2",
+            "src": "contracts/gsxToken/GSXV2.sol:447"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_address)dyn_storage": {
+            "label": "address[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_struct(FeeTier)1203_storage)dyn_storage": {
+            "label": "struct GSXV2.FeeTier[]",
+            "numberOfBytes": "32"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_contract(IUniswapV2Router02)9439": {
+            "label": "contract IUniswapV2Router02",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(FeeTier)1203_storage": {
+            "label": "struct GSXV2.FeeTier",
+            "members": [
+              {
+                "label": "ecoSystemFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "liquidityFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "taxFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "2"
+              },
+              {
+                "label": "ownerFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "3"
+              },
+              {
+                "label": "burnFee",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "4"
+              },
+              {
+                "label": "ecoSystem",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "5"
+              },
+              {
+                "label": "owner",
+                "type": "t_address",
+                "offset": 0,
+                "slot": "6"
+              }
+            ],
+            "numberOfBytes": "224"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    }
+  }
+}
